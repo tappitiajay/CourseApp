@@ -49,7 +49,6 @@ const authenticateJwt = (req, res, next) => {
 };
 
 // Connect to MongoDB
-// DONT MISUSE THIS THANKYOU!!
 mongoose.connect('mongodb+srv://sabaodyarchipelagoarc:RedHairShanks@cluster0.w9ac6nj.mongodb.net/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
 app.post('/admin/signup', (req, res) => {
